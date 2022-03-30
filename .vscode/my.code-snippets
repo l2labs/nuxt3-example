@@ -1,0 +1,355 @@
+{
+	"nuxt-页面-代码块": {
+		"prefix": "nuxt-page",
+		"body": [
+		  "<template>",
+		  "  <div class=\"\">",
+		  "    $1",
+		  "  </div>",
+		  "</template>\n",
+		  "<script setup lang=\"ts\">",
+		  "\/\/import {} from ''\n",
+		  "definePageMeta({ pageTransition: { name: 'fade', mode: 'out-in' } })",
+		  "\nonMounted(() => {})",
+		  "\nonUnmounted(() => {})",
+		  "\n</script>\n",
+		  "<i18n lang=\"yaml\">",
+		  "en:",
+		  "  title: title\n",
+		  "cn:",
+		  "  title: 标题",
+		  "</i18n>",
+		  "\n<style scoped lang=\"less\"></style>"
+		],
+		"description": "nuxt-页面-代码块"
+	  },
+
+	  "nuxt-组件-代码块": {
+		"prefix": "nuxt-component",
+		"body": [
+		  "<template>",
+		  "  <div class=\"\">",
+		  "    $1",
+		  "  </div>",
+		  "</template>\n",
+		  "<script setup lang=\"ts\">",
+		  "\/\/import {} from ''\n",
+		  "const props = defineProps<{",
+		  "  propName1: {",
+		  "    type: Boolean,",
+		  "    default: false",
+		  "  }",
+		  "  propName2: {",
+		  "    type: string,",
+		  "    default: ''",
+		  "  }",
+		  "}>()",
+		  "\nonMounted(() => {})",
+		  "\nonUnmounted(() => {})",
+		  "\n</script>\n",
+		  "<i18n lang=\"yaml\">",
+		  "en:",
+		  "  title: title\n",
+		  "cn:",
+		  "  title: 标题",
+		  "</i18n>",
+		  "\n<style scoped lang=\"less\"></style>"
+		],
+		"description": "nuxt-组件-代码块"
+	  },
+
+	  "nuxt-跳转-代码块": {
+		"prefix": ["nuxt-link", "<NuxtLink"],
+		"body": [
+		  "<NuxtLink :to=\"`/xxx/${xxx.xxx}`\" class=\"\">$1</NuxtLink>"
+		],
+		"description": "nuxt-跳转-代码块"
+	  },
+
+	  "nuxt-useRoute-代码块": {
+		"prefix": "useRoute",
+		"body": [
+		  "const route = useRoute()"
+		],
+		"description": "nuxt-useRoute-代码块"
+	  },
+
+	  "5个-<div>-代码块": {
+		"prefix": "<div>-5-snippets",
+		"body": [
+		  "<div class=\"\">$1</div>",
+		  "<div class=\"\"></div>",
+		  "<div class=\"\"></div>",
+		  "<div class=\"\"></div>",
+		  "<div class=\"\"></div>"
+		],
+		"description": "5个-<div>-代码块"
+	  },
+
+	  "<div>-嵌套-代码块": {
+		"prefix": "<div>-nest-snippets",
+		"body": [
+		  "<div class=\"$1\">",
+		  "  <div class=\"\"></div>",
+		  "  <div class=\"\"></div>",
+		  "  <div class=\"\"></div>",
+		  "</div>"
+		],
+		"description": "<div>-嵌套-代码块"
+	  },
+
+	  "<div>-居中-代码块": {
+		"prefix": "<div>-center-snippets",
+		"body": [
+		  "<div class=\"flex-center w-10 h-10 border\">",
+		  "  <div class=\"w-5 h-5 border\"></div>",
+		  "</div>"
+		],
+		"description": "<div>-居中-代码块"
+	  },
+
+	  "<section>-3-代码块": {
+		"prefix": "<section>-3-snippets",
+		"body": [
+		  "<section class=\"\">",
+		  "  <div class=\"\"></div>",
+		  "  <div class=\"\"></div>",
+		  "</section>\n",
+		  "<section class=\"\">",
+		  "  <div class=\"\"></div>",
+		  "  <div class=\"\"></div>",
+		  "</section>\n",
+		  "<section class=\"\">",
+		  "  <div class=\"\"></div>",
+		  "  <div class=\"\"></div>",
+		  "</section>\n"
+		],
+		"description": "<section>-3-代码块"
+	  },
+
+	  "<style>-代码块": {
+		"prefix": "style-snippets",
+		"body": [
+		  "<style scoped lang=\"less\">",
+		  "  .root-wrapper$1 {",
+		  "    @apply border;",
+		  "    border: none;",
+		  "  }",
+		  "</style>",
+		],
+		"description": "<style>-代码块"
+	  },
+
+	  "@keyframes-代码块": {
+		"prefix": "@keyframes-snippets",
+		"body": [
+		  "@keyframes ani-name$1 {",
+		  "  0% {\n",
+		  "  }",
+		  "  100% {\n",
+		  "  }",
+		  "}",
+		],
+		"description": "@keyframes-代码块"
+	  },
+
+	  "import-代码块": {
+		"prefix": "import-snippets",
+		"body": [
+		  "import { $2 } from '$1'"
+		],
+		"description": "import-代码块"
+	  },
+
+	  "v-for-代码块": {
+		"prefix": "v-for-snippets",
+		"body": [
+		  "<div v-for=\"item in items\" :key=\"item.id\" class=\"\"></div>"
+		],
+		"description": "v-for-代码块"
+	  },
+
+	  "v-if-代码块": {
+		"prefix": "v-if-snippets",
+		"body": [
+		  "<div v-if=\"$1\" class=\"\">{{ 'if' }}</div>",
+		  "<div v-else class=\"\">{{ 'else' }}</div>"
+		],
+		"description": "v-if-代码块"
+	  },
+
+	  "const-computed-代码块": {
+		"prefix": "const-computed-snippets",
+		"body": [
+		  "const varName_$1 = computed(() => {",
+		  "  return true",
+		  "})"
+		],
+		"description": "const-computed-代码块"
+	  },
+
+	  "const-computed-set-get-代码块": {
+		"prefix": "const-computed-set-get-snippets",
+		"body": [
+		  "const varName_$1 = computed({",
+		  "  set(val) {",
+		  "    console.log(val)",
+		  "  },",
+		  "  get() {",
+		  "    return 0",
+		  "  }",
+		  "})"
+		],
+		"description": "const-computed-set-get-代码块"
+	  },
+
+	  "const-{}-代码块": {
+		"prefix": "const-{}-snippets",
+		"body": [
+		  "const objName$1 = {",
+		  "  prop1: '',",
+		  "  prop2: '',",
+		  "  prop3: ''",
+		  "}"
+		],
+		"description": "const-{}-代码块"
+	  },
+
+	  "const-new-代码块": {
+		"prefix": "const-new-snippets",
+		"body": [
+		  "const objName_$1 = new Construct()"
+		],
+		"description": "const-new-代码块"
+	  },
+
+	  "const-function-代码块": {
+		"prefix": "const-function-snippets",
+		"body": [
+		  "const funcName_$1 = async () => {",
+		  "  return ''",
+		  "}",
+		],
+		"description": "const-function-代码块"
+	  },
+
+	  "const-string[]-代码块": {
+		"prefix": "const-string[]-snippets",
+		"body": [
+		  "const arrayName_$1 = ['aaa', 'bbb', 'ccc', 'ddd', 'eee']"
+		],
+		"description": "const-string[]-代码块"
+	  },
+
+	  "const-[1,2,3]-代码块": {
+		"prefix": "const-any[]-snippets",
+		"body": [
+		  "const arrayName_$1 = [1, 2, 3, 4, 5]"
+		],
+		"description": "const-[1,2,3]-代码块"
+	  },
+
+	  "const-[{}]-代码块": {
+		"prefix": "const-[{}]-snippets",
+		"body": [
+		  "const arrayName_$1 = [{}, {}, {}]"
+		],
+		"description": "const-[{}]-代码块"
+	  },
+
+	  "switch-代码块": {
+		"prefix": "switch-snippets",
+		"body": [
+		  "switch (value$1) {",
+		  "  case 1:",
+		  "    return ''",
+		  "  case 2:",
+		  "    return ''",
+		  "  case 3:",
+		  "    return ''",
+		  "  default:",
+		  "    return ''",
+		  "}"
+		],
+		"description": "switch-代码块"
+	  },
+
+	  "return-{}-代码块": {
+		"prefix": "return-{}-snippets",
+		"body": [
+		  "return {",
+		  "  prop1$1: '',",
+		  "  prop2: '',",
+		  "  prop3: ''",
+		  "}"
+		],
+		"description": "return-{}-代码块"
+	  },
+
+	  "interface-{}-代码块": {
+		"prefix": "interface-{}-snippets",
+		"body": [
+		  "interface I_name$1 {",
+		  "  prop1: string",
+		  "  prop2: number",
+		  "  prop3: any[]",
+		  "}"
+		],
+		"description": "interface-{}-代码块"
+	  },
+
+	  "enum-{}-代码块": {
+		"prefix": "enum-{}-snippets",
+		"body": [
+		  "enum _$1 {",
+		  "  XXX = '',",
+		  "  YYY = '',",
+		  "  ZZZ = ''",
+		  "}"
+		],
+		"description": "enum-{}-代码块"
+	  },
+
+	  "class-{}-代码块": {
+		"prefix": "class-{}-snippets",
+		"body": [
+		  "class className_$1 {",
+		  "  xxx: ''",
+		  "  yyy: ''",
+		  "  zzz: ''\n",
+		  "  constructor() {",
+		  "    this.xxx = ''",
+		  "  }\n",
+		  "  fun_1(p1: type, p2: type) {\n",
+		  "  }\n",
+		  "  fun_2(p1: type, p2: type) {\n",
+		  "  }",
+		  "}"
+		],
+		"description": "class-{}-代码块"
+	  },
+
+	  "watch()-代码块": {
+		"prefix": "watch()-snippets",
+		"body": [
+		  "watch(",
+		  "  () => xxx.yyy,",
+		  "  (newVal, oldVal) => {",
+		  "    \/\/do what you wanna",
+		  "  })"
+		],
+		"description": "watch()-代码块"
+	  },
+
+	  "注释-方法-代码块": {
+		"prefix": "zs-function",
+		"body": [
+		  "/**",
+		  " * @description ...",
+		  " * @param { ${2|Boolean,Number,String,Object,Array,*|} } ...",
+		  " * @return { ${1|Boolean,Number,String,Object,Array,*|} } ...",
+		  " */"
+		],
+		"description": "注释-方法-代码块"
+	  },
+}
