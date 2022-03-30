@@ -215,14 +215,6 @@
 		"description": "const-{}-代码块"
 	  },
 
-	  "const-new-代码块": {
-		"prefix": "const-new-snippets",
-		"body": [
-		  "const objName_$1 = new Construct()"
-		],
-		"description": "const-new-代码块"
-	  },
-
 	  "const-function-代码块": {
 		"prefix": "const-function-snippets",
 		"body": [
@@ -351,5 +343,51 @@
 		  " */"
 		],
 		"description": "注释-方法-代码块"
+	  },
+
+	  "列表-ul>li-代码块": {
+		"prefix": "ul>li-snippets",
+		"body": [
+		  "<ul class=\"$1\">",
+		  "  <li class=\"\"></li>",
+		  "  <li class=\"\"></li>",
+		  "  <li class=\"\"></li>",
+		  "  <li class=\"\"></li>",
+		  "  <li class=\"\"></li>",
+		  "</ul>"
+		],
+		"description": "列表-ul>li-代码块"
+	  },
+
+	  "布局-flex-div>3-代码块": {
+		"prefix": "flex-div>3-snippets",
+		"body": [
+		  "<div class=\"w-full h-24 border border-blue-400 flex-center justify-between$1\">",
+		  "  <div class=\"w-20 h-10 border bg-blue-400\"></div>",
+		  "  <div class=\"w-20 h-10 border bg-blue-400\"></div>",
+		  "  <div class=\"w-20 h-10 border bg-blue-400\"></div>",
+		  "</div>"
+		],
+		"description": "布局-flex-div>3-代码块"
+	  },
+
+	  "循环-n个div-代码块": {
+		"prefix": "div-n-snippets",
+		"body": [
+		  "<div v-for=\"i in ${1:n}\" :key=\"i\" class=\"\"></div>"
+		],
+		"description": "循环-n个div-代码块"
+	  },
+
+	  "复制-5个div-代码块": {
+		"prefix": "div-5-snippets",
+		"body": [
+		  "<div class=\"\"></div>",
+		  "<div class=\"\"></div>",
+		  "<div class=\"\"></div>",
+		  "<div class=\"\"></div>",
+		  "<div class=\"\"></div>"
+		],
+		"description": "复制-5个div-代码块"
 	  },
 }
