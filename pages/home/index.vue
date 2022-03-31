@@ -16,7 +16,7 @@ onUnmounted(() => {})
 en:
   title: title
 
-cn:
+zh:
   title: 标题
 </i18n>
 
