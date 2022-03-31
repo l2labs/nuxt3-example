@@ -16,7 +16,7 @@
 		  "<i18n lang=\"yaml\">",
 		  "en:",
 		  "  title: title\n",
-		  "cn:",
+		  "zh:",
 		  "  title: 标题",
 		  "</i18n>",
 		  "\n<style scoped lang=\"less\"></style>"
@@ -50,7 +50,7 @@
 		  "<i18n lang=\"yaml\">",
 		  "en:",
 		  "  title: title\n",
-		  "cn:",
+		  "zh:",
 		  "  title: 标题",
 		  "</i18n>",
 		  "\n<style scoped lang=\"less\"></style>"
