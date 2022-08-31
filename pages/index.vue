@@ -1,7 +1,7 @@
-<script>
-export default defineNuxtComponent({
-  beforeRouteEnter(_to, _from, next) {
-    next('/home')
-  }
-})
-</script>
+<template>
+  <Hello />
+</template>
+
+<script setup lang="ts"></script>
+
+<style></style>

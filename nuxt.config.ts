@@ -1,9 +1,17 @@
-import { defineNuxtConfig } from 'nuxt3'
-import vueI18n from '@intlify/vite-plugin-vue-i18n'
+import { defineNuxtConfig } from 'nuxt'
+
+const alias: Record<string, string> = {
+  echarts: 'echarts/dist/echarts.common.min.js'
+}
+
+if (process.env.NODE_ENV === 'development') {
+  alias.ethers = 'ethers/lib/index'
+  alias.moment = 'moment/moment'
+}
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  buildModules: ['nuxt-windicss', '@pinia/nuxt', 'vite-plugin-vue-type-imports', '@vueuse/nuxt'],
+  buildModules: ['nuxt-windicss', '@pinia/nuxt', 'vite-plugin-vue-type-imports/nuxt', '@vueuse/nuxt', '@intlify/nuxt3'],
   meta: {
     title: 'Page title',
     meta: [
@@ -16,23 +24,8 @@ export default defineNuxtConfig({
       { hid: 'description', name: 'description', content: '' }
     ]
   },
-  typescript: {
-    strict: true
-  },
-  alias: {
-    ethers: 'ethers/lib/index',
-    echarts: 'echarts/dist/echarts.common.min.js',
-    moment: 'moment/moment'
-  },
-  vite: {
-    logLevel: 'info',
-    plugins: [
-      vueI18n({
-        compositionOnly: false
-      })
-    ],
-    define: {}
-  },
+  typescript: { strict: true },
+  alias,
   css: ['~~/assets/css/app.css'],
   build: {
     templates: [
@@ -51,5 +44,12 @@ export default defineNuxtConfig({
         }
       }
     ]
+  },
+  intlify: {
+    localeDir: 'locales',
+    vueI18n: {
+      locale: 'en',
+      fallbackLocale: 'en'
+    }
   }
 })
