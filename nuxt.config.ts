@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
-
 const alias: Record<string, string> = {
   echarts: 'echarts/dist/echarts.common.min.js'
 }
@@ -11,18 +9,20 @@ if (process.env.NODE_ENV === 'development') {
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  buildModules: ['nuxt-windicss', '@pinia/nuxt', 'vite-plugin-vue-type-imports/nuxt', '@vueuse/nuxt', '@intlify/nuxt3'],
-  meta: {
-    title: 'Page title',
-    meta: [
-      { charset: 'utf-8' },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content: ''
-      },
-      { hid: 'description', name: 'description', content: '' }
-    ]
+  modules: ['nuxt-windicss', '@pinia/nuxt', 'vite-plugin-vue-type-imports/nuxt', '@vueuse/nuxt', '@intlify/nuxt3'],
+  app: {
+    head: {
+      title: 'Page title',
+      meta: [
+        { charset: 'utf-8' },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: ''
+        },
+        { hid: 'description', name: 'description', content: '' }
+      ]
+    }
   },
   typescript: { strict: true },
   alias,
